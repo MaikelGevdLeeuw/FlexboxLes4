@@ -13,10 +13,47 @@
 ////////////////////////*/
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --paars: #5722CD;
+    --Blauw: #4845E4;
+    --Roze: #ED4385;
+    --main-text: #0C0C0C;
+    --floating-text: #F2F0FF;
+    --service-text: #7A7A7A;
+}
 
 /* ------------------------------- 2. Typography ----------------------------------- */
+h1{
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+h4{
+    font-family: 'Merriweather', serif;
+    color: var(--paars);
+}
+
+p{
+    font-family: 'roboto', serif;
+}
+
+button{
+    font-family: 'roboto', serif;
+}
+
+a{
+    font-family: 'roboto', serif;
+}
 
 /* ------------------------------- 3. Layout --------------------------------------- */
+
+
 
 /* --------------- 3.1 Reusables ----------------------- */
 
@@ -25,6 +62,100 @@
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+header{
+    display: flex;
+    background: rgb(71,80,122);
+    background: radial-gradient(circle, rgba(71,80,122,1) 0%, rgba(93,75,203,1) 100%);
+    flex-direction: column;
+    gap: 20px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 20px 50px;
+}
+
+ul{
+    display: flex;
+    text-decoration: none;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav_header_link {
+    color: white;
+    text-decoration: none;
+}
+.div_header {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: 0 200px;
+}
+
+button {
+    color: white;
+    padding: 15px;
+    background-color: var(--Roze);
+    width: 200px;
+    border-radius: 30px;
+    border-style: none;
+    box-shadow: 1px 2px 3px black;
+}
+
+.div_image_header{
+    background-image: url("../assets/squiggle_line.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-basis: 90px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section_aboutus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 300px;
+}
+
+.div_section_aboutus{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    margin: 50px 200px;
+    border-style: ;
+}
+
+.div_section_aboutus_link{
+}
+
+
+.triangle-bottom-left {
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid white;
+    border-right: 2000px solid transparent;
+}
+
+.div_naam{
+    border-style: solid;
+    border-color: #0C0C0C;
+    background-color: #5722CD;
+}
 
 /* --------------- 4.2 Introduction ------------------- */
 
